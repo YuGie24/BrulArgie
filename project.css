@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+.project h1 h2{
+    margin-left: auto;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.project h2 {
+    text-align: center;
+}
+
+
+.film-strip {
+    width: 85%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.film-strip-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 30px; /* Adjust the gap between images */
+}
+
+.film-strip-inner p{
+    text-align: center;
+}
+.film-strip img {
+    width: 350px; /* Adjust the image width as needed */
+    height: auto;
+    scroll-snap-align: start;
+}
